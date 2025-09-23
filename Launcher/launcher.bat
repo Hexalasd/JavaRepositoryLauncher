@@ -1,8 +1,8 @@
 @echo off
 setlocal enabledelayedexpansion
-echo ================================
-echo    Repository Launcher Java
-echo ================================
+echo ===================================
+echo    Repository Launcher Java v1.1
+echo ===================================
 echo made by : hexal
 
 if not exist "MisProgramas" mkdir "MisProgramas"
@@ -14,8 +14,8 @@ for /f "tokens=1,2 delims==" %%a in (programas.txt) do (
 
     if "!tipo!"=="ZIP" (
         echo Descargando y descomprimiendo ZIP...
-        powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile 'temp.zip'; Expand-Archive -Path 'temp.zip' -DestinationPath 'Programas\%%a' -Force; Remove-Item 'temp.zip'"
-        echo ZIP descomprimido en: Programas\%%a
+        powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile 'temp.zip'; Expand-Archive -Path 'temp.zip' -DestinationPath 'MisProgramas\%%a' -Force; Remove-Item 'temp.zip'"
+        echo ZIP descomprimido en: MisProgramas\%%a
         
         echo Buscando JAR dentro del ZIP...
         set jar_encontrado=0
@@ -32,9 +32,9 @@ for /f "tokens=1,2 delims==" %%a in (programas.txt) do (
         )
     ) else (
         echo Descargando JAR...
-        powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile 'Programas\%%a.jar'"
+        powershell -Command "Invoke-WebRequest -Uri '%%b' -OutFile 'MisProgramas\%%a.jar'"
         echo Ejecutando JAR...
-        java -jar "Programas\%%a.jar"
+        java -jar "MisProgramas\%%a.jar"
     )
     echo.
 )

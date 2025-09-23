@@ -1,1 +1,1 @@
-MiProyecto=https://github.com/Hexalasd/Registrado-Videojuegos/releases/download/v0.1/Registrado-Videojuegos.zip
+MiProyecto=https://github.com/Hexalasd/Registrado-Videojuegos/releases/download/1.0.1/Registrado-Videojuegos.zip
