@@ -1,4 +1,4 @@
-RepositoryLauncherJava v1.1
+RepositoryLauncherJava v1.2
 Made by : Hexal
 
 El Programa descarga Releases de GitHub y las ejecuta automáticamente, las direcciones se ingresan en el archivo programas.txt, luego se guardan en el directorio programas, si no existe se crea.
