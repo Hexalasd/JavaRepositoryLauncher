@@ -1,5 +1,6 @@
 JRL v1.2
 
+
 Un lanzador automático que descarga y ejecuta programas Java directamente desde repositorios de github
 
 Funciones principales:
